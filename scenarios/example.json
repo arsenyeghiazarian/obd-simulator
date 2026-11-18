@@ -1,0 +1,37 @@
+{
+ "_comment": "Minimal example: a generic car with two OBD-II codes, a transmission module and one manufacturer-specific module. Module codes are 3 bytes: 2-byte DTC + failure-type byte (070000 = P0700, 523400 = C1234, 404500 = C0045). Copy this to make your own.",
+ "vin": "1HGCM82633A004352",
+ "obd_dtcs": [
+  "P0301",
+  "P0420"
+ ],
+ "obd_pending": [
+  "P0171"
+ ],
+ "ecus": [
+  {
+   "name": "Transmission",
+   "address": "can:7E1",
+   "dtcs": [
+    [
+     "070000",
+     "09"
+    ]
+   ]
+  },
+  {
+   "name": "ABS",
+   "address": "can:760",
+   "dtcs": [
+    [
+     "523400",
+     "2F"
+    ],
+    [
+     "404500",
+     "28"
+    ]
+   ]
+  }
+ ]
+}

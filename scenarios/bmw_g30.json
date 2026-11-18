@@ -1,0 +1,324 @@
+{
+ "_comment": "BMW G30 (5 Series) fault report as read by Car Scanner with the 'BMW > OBD-II / EOBD G-body' profile: 58 codes in 12 modules. The codes come from a real car; the VIN is made up. address 'ext:XX' = BMW module address (app sends ATSH6F1 + ATCEAXX, reply comes from 6XX); 'can:7E1' = 11-bit request ID (reply from 7E9). dtcs: [3-byte code, UDS status byte]. Status bits: 01 failed, 02 failed this cycle, 04 pending, 08 confirmed, 20 failed since clear, 40 not completed this cycle, 80 warning lamp on.",
+ "vin": "WBAJA00000CX00001",
+ "obd_dtcs": [
+  "P0302"
+ ],
+ "obd_pending": [],
+ "ecus": [
+  {
+   "name": "Transmission (OBD)",
+   "address": "can:7E1",
+   "dtcs": []
+  },
+  {
+   "name": "Engine #1 (DME)",
+   "address": "ext:12",
+   "dtcs": [
+    [
+     "120408",
+     "24"
+    ],
+    [
+     "030E06",
+     "60"
+    ],
+    [
+     "11A031",
+     "24"
+    ],
+    [
+     "11A605",
+     "64"
+    ],
+    [
+     "118002",
+     "20"
+    ],
+    [
+     "140009",
+     "28"
+    ],
+    [
+     "140210",
+     "A8"
+    ],
+    [
+     "14000A",
+     "20"
+    ],
+    [
+     "140011",
+     "24"
+    ]
+   ]
+  },
+  {
+   "name": "Transmission (EGS)",
+   "address": "ext:18",
+   "dtcs": []
+  },
+  {
+   "name": "SRS/Airbag",
+   "address": "ext:01",
+   "dtcs": []
+  },
+  {
+   "name": "DSC",
+   "address": "ext:29",
+   "dtcs": [
+    [
+     "480A11",
+     "AF"
+    ]
+   ]
+  },
+  {
+   "name": "CAN gateway",
+   "address": "ext:10",
+   "dtcs": [
+    [
+     "801C4E",
+     "02"
+    ],
+    [
+     "801C74",
+     "02"
+    ],
+    [
+     "801C76",
+     "43"
+    ],
+    [
+     "801C77",
+     "43"
+    ],
+    [
+     "801C7B",
+     "43"
+    ],
+    [
+     "801C7C",
+     "02"
+    ],
+    [
+     "801C7D",
+     "02"
+    ],
+    [
+     "801C80",
+     "43"
+    ],
+    [
+     "801C81",
+     "02"
+    ],
+    [
+     "CD040A",
+     "43"
+    ],
+    [
+     "CD041E",
+     "43"
+    ],
+    [
+     "CD0420",
+     "02"
+    ],
+    [
+     "CD042F",
+     "02"
+    ],
+    [
+     "CD0431",
+     "02"
+    ],
+    [
+     "CD0433",
+     "02"
+    ],
+    [
+     "CD0435",
+     "02"
+    ],
+    [
+     "CD0437",
+     "43"
+    ],
+    [
+     "CD0439",
+     "43"
+    ],
+    [
+     "CD043B",
+     "43"
+    ],
+    [
+     "CD043D",
+     "43"
+    ],
+    [
+     "CD0468",
+     "43"
+    ],
+    [
+     "CD0487",
+     "02"
+    ],
+    [
+     "CD050A",
+     "43"
+    ],
+    [
+     "CD0514",
+     "43"
+    ],
+    [
+     "CD0518",
+     "43"
+    ],
+    [
+     "CD0528",
+     "43"
+    ],
+    [
+     "CD0600",
+     "43"
+    ],
+    [
+     "CD0602",
+     "43"
+    ],
+    [
+     "CD0603",
+     "43"
+    ],
+    [
+     "CD0604",
+     "43"
+    ],
+    [
+     "CD0BFF",
+     "43"
+    ],
+    [
+     "CD1410",
+     "43"
+    ]
+   ]
+  },
+  {
+   "name": "Steering (EPS)",
+   "address": "ext:30",
+   "dtcs": []
+  },
+  {
+   "name": "Car access system (BDC)",
+   "address": "ext:40",
+   "dtcs": []
+  },
+  {
+   "name": "Center roof module (FZD)",
+   "address": "ext:56",
+   "dtcs": [
+    [
+     "030296",
+     "28"
+    ],
+    [
+     "801A55",
+     "60"
+    ]
+   ]
+  },
+  {
+   "name": "Camera-based driver assist (KAFAS)",
+   "address": "ext:5D",
+   "dtcs": [
+    [
+     "800ABF",
+     "28"
+    ]
+   ]
+  },
+  {
+   "name": "Instrument cluster (KOMBI)",
+   "address": "ext:60",
+   "dtcs": [
+    [
+     "026003",
+     "2F"
+    ],
+    [
+     "026004",
+     "2F"
+    ]
+   ]
+  },
+  {
+   "name": "Infotainment (HU)",
+   "address": "ext:63",
+   "dtcs": [
+    [
+     "031791",
+     "65"
+    ]
+   ]
+  },
+  {
+   "name": "Climate (IHKA)",
+   "address": "ext:78",
+   "dtcs": []
+  },
+  {
+   "name": "Power control unit",
+   "address": "ext:2E",
+   "dtcs": [
+    [
+     "803D12",
+     "2E"
+    ],
+    [
+     "803D14",
+     "2C"
+    ],
+    [
+     "803D1A",
+     "6C"
+    ],
+    [
+     "803D1B",
+     "6C"
+    ],
+    [
+     "803D4E",
+     "2E"
+    ]
+   ]
+  },
+  {
+   "name": "Micro power supply",
+   "address": "ext:43",
+   "dtcs": [
+    [
+     "D9C50B",
+     "28"
+    ]
+   ]
+  },
+  {
+   "name": "Flexible bus interface",
+   "address": "ext:61",
+   "dtcs": [
+    [
+     "03178A",
+     "2F"
+    ],
+    [
+     "031786",
+     "6D"
+    ]
+   ]
+  }
+ ]
+}
